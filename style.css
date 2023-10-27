@@ -29,40 +29,48 @@ body {
 
 h1 {
   font-family: var(--bigShoulder);
+  font-size: 2.5rem;
   color: var(--lightGray);
 }
 
 p {
-  line-height: 1.8;
+  line-height: 1.6;
   color: var(--lightGray);
 }
 
+#hero-section {
+  display: grid;
+  place-items: center;
+  height: calc(100vh - (5.625rem * 2rem));
+}
 
 .grid-container {
-  margin: 4rem 1rem;
+  margin: 5.625rem 0;
+  display: grid;
 }
 
 .wrapper {
-  padding: 3rem 3rem;
+  padding: 3.75rem 2.19rem;
+  width: 315px;
 }
 
-.wrapper > button {
-  border: 1px solid var(--lightGray);
-  border-radius: 20px;
-  padding: 1rem 2rem;
-  margin-top: 1rem;
-  background-color: var(--lightGray);
+.wrapper button {
+  padding: 0.94rem 2.5rem;
+  border: 2px solid var(--lightGray);
+  border-radius: 25px;
   cursor: pointer;
+  background-color: var(--lightGray);
+  transition: background-color 250ms ease-in;
+  margin-top: 1.25rem;
 }
 
-.wrapper > button:hover {
+.wrapper button:hover {
   background-color: rgba(255, 255, 255, 0);
 }
 
-
 #sedans {
   background-color: var(--sedans-bg);
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0px 0px;
 }
 
 #suvs {
@@ -71,50 +79,47 @@ p {
 
 #luxury {
   background-color: var(--luxury-bg);
-  border-radius: 0 0 10px 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 
-#sedans > button {
+#sedans button {
   color: var(--sedans-bg);
 }
 
-#suvs > button {
+#suvs button {
   color: var(--suvs-bg);
 }
 
-#luxury > button {
+#luxury button {
   color: var(--luxury-bg);
 }
 
-#sedans > button:hover,
-#suvs > button:hover,
-#luxury > button:hover {
+#sedans button:hover,
+#suvs button:hover,
+#luxury button:hover {
   color: var(--lightGray);
 }
 
+@media (min-width: 945px) {
+  #hero-section {
+    display: grid;
+    place-items: center;
+    height: calc(100vh - 14px);
+  }
 
-@media (min-width: 376px) {
   .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 0.875rem);
-    margin: 0;
-  }
-  .wrapper {
-    width: 20rem;
-  }
-  .wrapper > button {
-    margin-top: 8rem;
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  
+  .wrapper {
+    padding: 3.75rem 2.8rem;
+  }
+
   #sedans {
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 0px 0px 10px;
   }
 
   #luxury {
-    border-radius: 0 10px 10px 0;
+    border-radius: 0px 10px 10px 0px;
   }
 }
