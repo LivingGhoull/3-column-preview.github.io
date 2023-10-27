@@ -104,7 +104,7 @@ p {
   #hero-section {
     display: grid;
     place-items: center;
-    height: calc(100vh - 14px);
+    height: 100vh;
   }
 
   .grid-container {
