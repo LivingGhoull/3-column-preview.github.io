@@ -24,7 +24,7 @@ Users should be able to:
 
 ![](./DesktopComplete.png)
 
-![](./DesktopHoverComplete.png)
+![](./DesktopHoverComplete.jpg)
 
 ![](./MobileComplete.png)
 
