@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/LivingGhoull/3-column-preview.github.io)
-- Live Site URL: [Add live site URL here](https://livingghoull.github.io/3-column-preview.github.io/)
+- Github URL: [Github project](https://github.com/LivingGhoull/3-column-preview.github.io)
+- Live Site URL: [Live service](https://livingghoull.github.io/3-column-preview.github.io/)
 
 ## My process
 
